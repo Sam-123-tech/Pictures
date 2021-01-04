@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+    <style>
+        body{
+    background-color: purple;
+}
+h1{
+            margin:12px auto;
+            width:400px;
+            font-family: 'Pacifico', cursive;
+            color: gold;
+            background-color: deeppink;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: whitesmoke;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+footer{
+    background: black;
+    color: rgb(252, 90, 90);
+    padding: 9px 20px;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(255, 14, 106);
+    background-color: deepskyblue;
+    color: rgb(72, 255, 0);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: darkblue;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('Images/animal4.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: rgb(38, 0, 255);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: rgb(255, 81, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.dfdf{
+    float: right;
+    display: block;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('Images/bg3.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   color: rgb(170, 255, 0)
+}
+u{
+    color: wheat;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about-container">About</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1> MY COLLECTION OF PICTURES 
+        I HAVE A HUGE COLLECTION OF PICTURES.
+        It's only animals
+    </h1>
+    <section id="home">
+        <h1 class="h-primary">Here are my pics</h1>
+        <p></p>
+        <p> </p>
+        <button class="btn">SEE SNAPS</button>
+    </section>
+    <section id="about-container">
+        <h1 class="h-primary center"></h1>
+        <div id="services">
+            <div class="box">
+                <img src="Images/animal1.jpg" alt="">
+                <h2 class="h-secondary center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal9.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal2.jpg" alt="">
+                <h2 class="h-secondary center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal10.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal3.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal11.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal5.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal12.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal6.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal7.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal8.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal13.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal14.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal15.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal16.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal17.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal18.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="dfdf">
+                <img src="Images/animal19.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="Images/animal20.jpg" alt="">
+                <h2 class="h-secondary center"></h2>
+                <p class="center"></p>
+            </div>
+                <div class="box">
+                    <img src="Images/animal22.jpg" alt="">
+                    <h2 class="h-secondary center"></h2>
+                    <p class="center"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit Now">
+                    <input type="reset" value="Reset Now">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <u> You can also suggest me what pictures I should click.</u>
+    <footer>
+        <div class="center">
+            Copyright &copy; All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
